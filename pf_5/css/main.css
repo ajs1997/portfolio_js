@@ -1,0 +1,270 @@
+@import url('reset.css');
+@import url('font.css');
+
+
+
+
+
+#wrap {width: 100%;}
+
+header {width: 100%;}
+
+#header { width: 1200px; margin: 0 auto;}
+#header h1 {float: left; width: 30%; padding: 60px 0 30px 0;}
+#header h1 img { width: 40%; max-width: 100%; height: auto;}
+
+
+
+
+
+nav > {float: left; width: 70%;}
+nav > ul.gnb {display: flex; padding-top: 100px;}
+nav > ul.gnb > li { position: relative; width: 20%; text-align: center; padding-bottom: 35px;}
+nav > ul.gnb > li > a {font-size: 20px; color: #000;}
+nav > ul.gnb > li > a:hover {color: #c17539;}
+
+nav ul.sub {position: absolute; top: 60px; left: 0; width: 100%; z-index: 88888; display: none;}
+nav ul.sub li {text-align: center;}
+nav ul.sub li a {padding: 10px 0; display: block; color: #ddd;}
+nav ul.sub li a:hover {background: #9b7200;}
+
+.nav_bg {position: absolute; top: 160px; left: 0; width: 100%; height: 176px; background: #000; z-index: 6666; display: none; opacity: 0.5;}
+
+.toggle {display: none;}
+
+.nav_480 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #cb6019;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 99999;
+    padding-top: 50px;
+}
+
+.nav_480 a {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 0 10px 30px;
+    display: block;
+}
+
+.nav_480 .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+
+ul.menu {width: 250px;}
+
+.sns_480 {display: flex; position: absolute; bottom: 3%; left: 50%; transform: translate(-50%, -50%);}
+.sns_480 a {padding: 0 15px;}
+.sns_480 a i {font-size: 30px;}
+
+@media (max-width: 1220px) {
+    #header {width: 100%; padding: 0 2%;}
+    nav ul.gnb li a {font-size: 18px;}
+}
+
+@media (max-width: 768px) {
+    #header {height: 0;}
+    #header h1 {padding: 20px 0 10px 0;}
+    #header h1 img {width: 50%;}
+    nav ul.gnb {display: none;}
+    .top_menu {display: none;}
+    .toggle {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+    .toggle a i {font-size: 28px;}
+}
+
+
+
+/* 배너 */
+#banner {width: 100%; display: flex;}
+.banner_1 {
+    width: 100%;
+    background: url('../images/banner_img.jpg')no-repeat;
+    background-size: cover;
+    animation: bimg_1 30s linear infinite;
+    position: relative;
+}
+
+@keyframes bimg_1 {
+    0% {
+        background-size: 100%;
+        background-position: right;
+    }
+    100% {
+        background-size: 200%;
+        background-position: bottom;
+    }
+}
+
+.banner_1 img {width: 100%; max-width: 100%; height: auto; opacity: 0;}
+
+.b_title {position: absolute; top: 50%; right: 30%; font-size: 2vw; color: #fff;}
+.b_title span {color: #fea71d; font-weight: 600;}
+.b_text {position: absolute; top: 55%; right: 28%; font-size: 1vw; color: #ded2b9;}
+
+@media (max-width: 768px) {
+    .b_title {position: absolute; top: 30%; right: 20%; font-size: 3vw;}
+    .b_text {position: absolute; top: 35%; right: 3%; font-size: 2vw;}
+}
+
+@media (max-width: 768px) {
+    .b_title {position: absolute; top: 20%; right: 7%; font-size: 4vw;}
+    .b_text {display: none;}
+}
+
+
+
+/* 첫번째 섹션 */
+#contents_wrap_1 {
+    width: 100%;
+    background: url('../images/back_1.jpg')no-repeat;
+    background-size: cover;
+    padding: 15% 0;
+}
+
+.imgbox_1 {float: left; width: 26%; padding: 0 2%; margin-top: 5%;}
+.imgbox_2 {float: left; width: 24%;}
+
+.imgbox_1 img {width: 100%; max-width: 100%; height: auto;}
+.imgbox_2 img {width: 100%; max-width: 100%; height: auto;}
+
+.textbox_1 {float: left; width: 50%; padding: 0 5%; margin-top: 6%;}
+.beer_title {color: #381f0c; font-size: 3vw; padding-bottom: 2vw; font-family: 'GmarketSansBold';}
+.beer_text_1 {color: #381f0c; font-size: 1.6vw; font-family: 'GmarketSansMedium';}
+.beer_text_2 {color: #333333; font-size: 1vw; padding: 1.5vw 0 4vw 0;}
+
+.more button {
+    background: #731300;
+    color: #fff;
+    font-size: 1.2vw;
+    padding: 10px 28px;
+    cursor: pointer;
+    border-radius: 0px 20px 0px 20px;
+}
+.more button:hover {background: #000;}
+
+
+@media (max-width: 1220px) {
+    .beer_title {font-size: 3.5vw; padding-bottom: 2vw;}
+    .beer_text_1 {font-size: 1.9vw;}
+    .beer_text_2 {font-size: 1.3vw; line-height: 1.8vw; padding: 1.5vw 0 5vw 0;}
+    .more button {font-size: 1.2vw;}
+}
+@media (max-width: 768px) {
+    #contents_wrap_1 {padding: 10% 5%;}
+    .imgbox_1 {width: 50%; padding-right: 3%;}
+    .imgbox_2 {width: 50%;}
+    .textbox_1 {width: 100%; padding: 0; margin-top: 10%;}
+    .beer_title {text-align: center; font-size: 5vw; padding-bottom: 2vw;}
+    .beer_text_1 {text-align: center; font-size: 2.6vw;}
+    .beer_text_2 {text-align: center; font-size: 2.3vw; line-height: 3vw;}
+    .more {text-align: center;}
+    .more button {font-size: 2.3vw;}
+}
+@media (max-width: 480px) {
+    .beer_title {font-size: 7vw; padding-bottom: 2vw;}
+    .beer_text_1 {font-size: 3.8vw;}
+    .beer_text_2 {font-size: 3vw; line-height: 3vw;}
+    .more button {font-size: 2.3vw;}
+}
+
+
+/* 두번째 섹션 */
+
+
+#contents_wrap_2 {
+    width: 100%;
+    background: url('../images/back_2.jpg')no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+
+#contents {width: 1200px; margin: 0 auto;}
+
+.sub_title {text-align: center; font-family: 'GmarketSansMedium'; color: #8b4200; font-size: 3.5vw; line-height: 5vw;}
+.sub_text {text-align: center; font-family: 'GmarketSansMedium'; color: #695525; font-size: 1.3vw; margin-bottom: 3vw;}
+
+.made_beer_wrap {margin: 0 -15px;}
+.made_beer_wrap::after {display: table; content: ''; clear: both;}
+
+.made_beer_box {float: left; width: 25%; padding: 0 15px; opacity: 0.8;}
+.made_beer_box img {width: 100%; max-width: 100%; height: auto;}
+.made_beer_box:hover {cursor: pointer; opacity: 1; transition: 0.3s}
+
+.mbb_box {width: 100%; height: 160px; background: #e3dfd2; padding: 10%;}
+.mbb_title {font-size: 20px; color: #000; font-weight: 500; margin-bottom: 10px;}
+
+@media (max-width: 1220px) {
+    #contents {width: 100%; padding: 0 5%;}
+}
+@media (max-width: 768px) {
+    .sub_title {font-size: 5vw; line-height: 7vw;}
+    .sub_text {font-size: 2vw; margin-bottom: 5vw;}
+    .made_beer_box {width: 50%;}
+    .mg_bottom_30 {margin-bottom: 30px;}
+}
+@media (max-width: 480px) {
+    .made_beer_box {width: 100%; opacity: 1;}
+    .mbb_box {height: auto;}
+    .sub_title {font-size: 6.5vw; line-height: 8vw;}
+    .sub_text {font-size: 2.6vw;}
+    .mg_bottom_30-1 {margin-bottom: 30px;}
+}
+
+
+/* 세번째 섹션 */
+
+#contents_wrap_3 {
+    width: 100%;
+    background: #f2e5d1;
+    padding: 10% 0;
+}
+
+.imgbox_3 {float: right; width: 50%; padding: 0 5% 0 0;}
+
+.imgbox_3 img {width: 100%; max-width: 100%; height: auto;}
+
+
+@media (max-width: 768px) {
+    #contents_wrap_3 {padding: 10% 5%;}
+    .imgbox_3 {width: 100%; padding: 0 0 0 0; margin-top: 50px;}
+}
+
+
+
+/* 푸터 */
+footer {width: 100%; height: 250px; background: #4f3015;}
+#footer {width: 1200px; margin: 0 auto;}
+.f_logo {float: left; padding-top: 5%;}
+.f_logo img {width: 80%; max-width: 100%; height: auto;}
+.copy {float: left; color: #a6a5a5; padding: 5% 0 0 1%;}
+.sns {float: right; padding-top: 5%;}
+.sns a {padding-left: 10px;}
+.sns a i {font-size: 30px; color: #a6a5a5;}
+.sns a:hover i {color: #381f0c;}
+
+@media (max-width: 1220px) {
+    #footer {width: 100%; padding: 0 5%;}
+}
+@media (max-width: 768px) {
+    footer {height: 200px;}
+    .sns {display: none;}
+}
+@media (max-width: 480px) {
+    .f_logo img {width: 25%;}
+    .f_logo {width: 100%; padding-top: 10%;}
+    .copy {width: 100%; font-size: 14px; padding: 3% 0 0 1%;}
+}

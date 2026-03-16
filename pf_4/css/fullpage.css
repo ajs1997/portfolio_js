@@ -1,0 +1,71 @@
+
+
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+    height: 100%;
+    display: block;
+}
+
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide{
+    height: auto !important;
+}
+
+.fp-responsive .fp-is-overflow.fp-section{
+    height: auto !important;
+}
+
+/* Used with autoScrolling: false */ 
+.fp-scrollable.fp-responsive .fp-is-overflow.fp-section,
+.fp-scrollable .fp-section,
+.fp-scrollable .fp-slide{
+   /* Fallback for browsers that do not support Custom Properties */
+   height: 100vh;
+   height: calc(var(--vh, 1vh) * 100);
+}
+
+.fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]),
+.fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]),
+.fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]){
+    /* Fallback for browsers that do not support Custom Properties */
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Disabling vertical centering on scrollable elements */
+.fp-overflow{
+    justify-content: flex-start;
+    max-height: 100vh;
+}
+
+/* No scrollable when using auto-height */
+.fp-scrollable .fp-auto-height .fp-overflow{
+    max-height: none;
+}
+
+.fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+.fp-is-overflow .fp-overflow.fp-auto-height,
+.fp-is-overflow > .fp-overflow{
+    overflow-y: auto;
+}
+.fp-overflow{
+    outline:none;
+}
+
+.fp-overflow.fp-table{
+    display: block;
+}
+
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-slide{
+    height: auto !important;
+    min-height: auto !important;
+}
+
+
+
+

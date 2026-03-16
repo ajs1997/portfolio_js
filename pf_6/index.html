@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Coffee</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header">
+                <h1 class="animated wow fadeInDown"><a href="index.html"><img src="images/logo.png" alt=스트릿커피></a></h1>
+                <nav>
+                    <div class="nav_bg"></div>
+                    <p class="toggle"><a href="#"><i class="fa-solid fa-bars" onclick="openNav()"></i></a></p>
+
+                            <div id="mySidenav" class="nav_480">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <ul class="menu">
+                                    <li><a href="#">BRAND INFO</a></li>
+                                    <li><a href="#">COFFEE STORY</a></li>
+                                    <li><a href="#">PRODUCTS</a></li>
+                                    <li><a href="#">SERVICE</a></li>
+                                    <li><a href="#">COMMUNITY</a></li>
+                                </ul>
+                                <div class="sns_480">
+                                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+                                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                </div>
+                            </div>
+
+                            <ul class="gnb">
+                                <li><a href="#">BRAND INFO</a>
+                                    <ul class="sub">
+                                        <li><a href="#">브랜드이념</a></li>
+                                        <li><a href="#">매장소개</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">COFFEE STORY</a>
+                                    <ul class="sub">
+                                        <li><a href="#">커피제조공정</a></li>
+                                        <li><a href="#">정직한커피</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PRODUCTS</a>
+                                    <ul class="sub">
+                                        <li><a href="#">스페셜커피</a></li>
+                                        <li><a href="#">아메리카노</a></li>
+                                        <li><a href="#">에스프레소</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">SERVICE</a>
+                                    <ul class="sub">
+                                        <li><a href="#">배달서비스</a></li>
+                                        <li><a href="#">주변매장찾기</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">COMMUNITY</a>
+                                    <ul class="sub">
+                                        <li><a href="#">고객의 소리</a></li>
+                                        <li><a href="#">Q&A</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="banner" class="animated wow fadeInUp">
+            <p class="img_text">
+                <span>최고의 커피를 체험하는 일상공간</span><br>
+                Fine Roasing & Best Qualified Coffee<br>
+                Since 2009,Street COFFEE in Seoul
+            </p>
+
+            <div class="slider">
+                <div class="animated wow fadeInUp">
+                    <img src="images/b_img_1.jpg" alt="">
+                </div>
+                <div class="animated wow fadeInUp">
+                    <img src="images/b_img_2.jpg" alt="">
+                </div>
+                <div class="animated wow fadeInUp">
+                    <img src="images/b_img_3.jpg" alt="">
+                </div>
+                <div class="animated wow fadeInUp">
+                    <img src="images/b_img_4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+            <section id="banner_480">
+                <p class="img_text_480">Street Coffee</p>
+                <img src="images/bm_img.jpg" alt="">
+            </section>
+
+
+        <section class="contents_wrap_1">
+            <div id="contents">
+                <h2 class="sub_title animated wow fadeInDown">Street Coffee Cafe Story</h2>
+                <p class="sub_text animated wow fadeInUp">“같은 커피 다른 맛, 매일 느끼는 새로운 풍미”</p>
+
+                <div class="place_wrap">
+                    <div class="place mg_bottom_1 animated wow fadeInUp delay-02s">
+                        <div class="p_img"><a href="#"><img src="images/p_1.jpg" alt=""></a></div>
+                        <p class="p_text">강남 1호점</p>
+                    </div>
+                    <div class="place mg_bottom_1 animated wow fadeInUp delay-04s">
+                        <div class="p_img"><a href="#"><img src="images/p_2.jpg" alt=""></a></div>
+                        <p class="p_text">청담 1호점</p>
+                    </div>
+                    <div class="place animated wow fadeInUp delay-06s">
+                        <div class="p_img"><a href="#"><img src="images/p_3.jpg" alt=""></a></div>
+                        <p class="p_text">서귀포 1호점</p>
+                    </div>
+                    <div class="place animated wow fadeInUp delay-08s">
+                        <div class="p_img"><a href="#"><img src="images/p_4.jpg" alt=""></a></div>
+                        <p class="p_text">해운대 1호점</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contents_wrap_1 clearfix">
+            <div id="contents">
+                <div class="s_img animated wow bounceInUp delay-02s"><img src="images/s.jpg" alt=""></div>
+                <div class="text_box">
+                    <p class="s_text_1 animated wow fadeInDown delay-04s">
+                        Street Coffee의 최초 1호 매장은 1982년 인천 부평동에서 개점하였다.
+                    </p>
+                    <p class="s_text_2 animated wow fadeInUp delay-06s">
+                        세 명의 동업자가 점포를 낸 것으로 개인적으로 친분이 있던 커피농장에서 
+                        영감을 얻은 것이었는데, 고품질 커피 원두와 장비를 판매하는 것으로 확장했다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contents_wrap_1-1 clearfix">
+            <div class="m_img_box">
+                <div class="m_img animated wow fadeInUp delay-02s">
+                    <img src="images/m_1.jpg" alt="">
+                </div>
+                <div class="m_img animated wow fadeInUp delay-04s">
+                    <img src="images/m_2.jpg" alt="">
+                </div>
+                <div class="m_img animated wow fadeInUp delay-06s">
+                    <img src="images/m_3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="contents_wrap_1 clearfix">
+            <div id="contents">
+                <h2 class="sub_title sub_title_480_x animated wow fadeInDown">Home Delivery Service</h2>
+                <p class="sub_text sub_text_480_x animated wow fadeInUp" >“집에서 느끼는 스트릿커피만의 고품격 풍미”</p>
+
+                <div class="j_text_box">
+                    <p class="j_text_1 animated wow fadeInDown">최고급 원두로 만든 스트릿커피의<br> 홈딜리버리 서비스</p>
+                    <p class="j_text_2 animated wow fadeInUp">
+                        향과 맛을 오묘하게 배합하는 스트릿커피만의 블랜딩 노하우와 최고급 
+                        로스팅 기법, 그리고 엄선된 원두가 가진 신선한 풍미를 매일 당신의 
+                        집에서 음미할 수 있습니다.
+                    </p>
+                    <div class="j_img_1 animated wow fadeInUp delay-02s"><img src="images/j_1.jpg" alt=""></div>
+                    <div class="j_img_2 animated wow fadeInUp delay-04s"><img src="images/j_2.jpg" alt=""></div>
+                </div>
+
+                <div class="j_img_box">
+                    
+                    <div class="j_img_3 animated wow fadeInUp delay-06s"><img src="images/jb.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="contents_wrap_1 clearfix">
+            <div id="contents">
+                <h2 class="sub_title animated wow fadeInDown">Products</h2>
+                <p class="sub_text animated wow fadeInUp">“최고급 원두, 스페셜 브랜딩, 완벽한 로스팅”</p>
+
+                <div class="pro_box_wrap">
+                    <div class="pro_box mg_bottom_1 animated wow fadeInDown delay-02s">
+                        <div class="pro_img_1"><a href="#"><img src="images/pro_1.jpg" alt=""></a></div>
+                        <p class="pro_text_1">| 원두 정기배송 <span>30,000/1month</span></p>
+                        <p class="pro_text_2"> #겨울 한정_ 에티오피아 클래식</p>
+                    </div>
+
+                    <div class="pro_box animated wow fadeInUp delay-02s">
+                        <div class="pro_img_1"><a href="#"><img src="images/pro_2.jpg" alt=""></a></div>
+                        <p class="pro_text_1">| 커피잔+커피홀더 SET <span>90,000/1set</span></p>
+                        <p class="pro_text_2">#Handmade_ 핸드스티치 커피세트</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="contents_wrap_2 animated wow fadeInUp">
+            <div class="banner_wrap">
+                <!-- <p class="b_text_1">“이달의 SPECIAL 커피"</p>
+                <p class="b_text_2">
+                    달콤쌉싸름한 첫 맛, 기분좋은 끝맛
+                    에티오피아 클래식
+                </p> -->
+                <div class="banner_img"><img src="images/banner.jpg" alt=""></div>
+            </div> 
+        </section>
+
+
+        <footer class="animated wow fadeInDown">
+            <div id="footer">
+                <div class="f_logo"><img src="images/logo.png" alt=""></div>
+                <div class="copy">
+                    서울시 영등포구 당산동 123-45  Tel. 02-2345-9876<br>
+                    Copyright ⓒ2022 Street Coffee. all rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $('.slider').bxSlider({
+                    auto: true, // 자동으로 애니메이션 시작
+                    speed: 900, // 애니메이션 속도
+                    pause: 4000, // 애니메이션 유지 시간 (1000은 1초)
+                    autoHover: false, // 마우스 올렸을 때 전환 멈춤
+                    mode: 'fade', // 슬라이드 모드 ('fade', 'horizontal', 'vertical')
+                    pager: true, // 페이지 표시 보여짐
+                    controls: false, // 사이드 컨트롤러
+                });
+            });
+    </script>
+
+<!-- 메뉴탭 -->
+<script>
+    function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" language="javascript">   
+    $(function() {
+        $('#store').carouFredSel({
+            responsive: true,
+            width: '100%',
+            scroll: 1, //하나씩 스크롤
+            prev: '#prev',
+            next: '#next',
+            auto: true,
+            items: {
+                visible: {
+                    min: 2,
+                    max: 5
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

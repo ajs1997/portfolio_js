@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잇츠제과</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="clearfix">
+            <div id="header">
+                <ul class="top_menu">
+                    <li><a href="#">MAIN</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">JOIN</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">ENGLISH</a></li>
+                </ul>
+
+                <h1 class="animated fadeInDown wow"><a href="index.html"><img src="images/logo.png" alt="잇츠제과"></a></h1>
+                <nav>
+
+                    <p class="toggle"><a href="#"><i class="fa-solid fa-bars" onclick="openNav()"></i></a></p>
+
+                    <div id="mySidenav" class="nav_480">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul class="menu">
+                            <li><a href="#">브랜드스토리</a></li>
+                            <li><a href="#">제품안내</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                        <div class="sns_480">
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="nav_bg"></div>
+                    <ul class="gnb">
+                        <li><a href="#">브랜드스토리</a>
+                            <ul class="sub">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">재료이야기</a></li>
+                                <li><a href="#">글로벌 잇츠제과</a></li>
+                                <li><a href="#">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">제품안내</a>
+                            <ul class="sub">
+                                <li><a href="#">빵</a></li>
+                                <li><a href="#">케이크</a></li>
+                                <li><a href="#">햄버거</a></li>
+                                <li><a href="#">핫도그</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">매장안내</a>
+                            <ul class="sub">
+                                <li><a href="#">본점</a></li>
+                                <li><a href="#">전국매장</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이벤트</a>
+                            <ul class="sub">
+                                <li><a href="#">진행중인 이벤트</a></li>
+                                <li><a href="#">이벤트 당첨자</a></li>
+                                <li><a href="#">제휴 혜택</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">채용공고</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section id="banner" class="animated fadeInUp wow">
+            <p class="img_text">
+            <span class="size">100% 우리밀로 만든</span><br>
+            맛있는 빵! 건강한 빵!
+            </p>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <div class="slider">
+                <div class="animated fadeInUp wow"><img src="images/main_1.jpg" alt="맛있는빵! 건강한빵!"></div>
+                <div class="animated fadeInDown wow"><img src="images/main_2.jpg" alt="맛있는빵! 건강한빵!"></div>
+                <div class="animated fadeInUp wow"><img src="images/main_3.jpg" alt="맛있는빵! 건강한빵!"></div>
+                <div class="animated fadeInDown wow"><img src="images/main_4.jpg" alt="맛있는빵! 건강한빵!"></div>
+                <div class="animated fadeInUp wow"><img src="images/main_5.jpg" alt="맛있는빵! 건강한빵!"></div>
+            </div>
+        </section>
+
+        <section id="banner_480">
+            <p class="img_text_1">
+                잇츠<br>
+                제과
+            </p>
+            <img src="images/m_main.jpg" alt="이미지">
+        </section>
+
+
+
+
+        <section id="contents_wrap_1" class="clearfix">
+            <div class="icon animated fadeInUp delay-02s wow">
+                <a href="#"><img src="images/i_img_1.png" alt="빵"></a>
+                <p class="icon_text">빵</p>
+            </div>
+            <div class="icon animated fadeInUp delay-03s wow">
+                <a href="#"><img src="images/i_img_2.png" alt="케이크"></a>
+                <p class="icon_text">케이크</p>
+            </div>
+            <div class="icon animated fadeInUp delay-04s wow">
+                <a href="#"><img src="images/i_img_3.png" alt="햄버거"></a>
+                <p class="icon_text">햄버거</p>
+            </div>
+            <div class="icon animated fadeInUp delay-05s wow">
+                <a href="#"><img src="images/i_img_4.png" alt="핫도그"></a>
+                <p class="icon_text">핫도그</p>
+            </div>
+            <div class="icon animated fadeInUp delay-06s wow">
+                <a href="#"><img src="images/i_img_5.png" alt="쿠키"></a>
+                <p class="icon_text">쿠키</p>
+            </div>
+            <div class="icon animated fadeInUp delay-07s wow">
+                <a href="#"><img src="images/i_img_6.png" alt="디저트"></a>
+                <p class="icon_text">디저트</p>
+            </div>
+            <div class="icon animated fadeInUp delay-08s wow">
+                <a href="#"><img src="images/i_img_7.png" alt="잼"></a>
+                <p class="icon_text">잼</p>
+            </div>
+            <div class="icon animated fadeInUp delay-09s wow">
+                <a href="#"><img src="images/i_img_8.png" alt="와플"></a>
+                <p class="icon_text">와플</p>
+            </div>
+        </section>
+
+
+
+        <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">Best Bread</h2>
+                <p class="sub_text">100% 우리밀로 만든 맛있는 빵! 건강한 빵! 잇츠제과</p>
+
+                <!-- <p class="more"><a href="#">MORE</a></p> -->
+
+                <div class="tab animated fadeInDown wow">
+                    <button id="defaultOpen" class="tablinks" onclick="openMenu(event, 'menu_1')">Bread</button>
+                    <button class="tablinks" onclick="openMenu(event, 'menu_2')">Cake</button>
+                </div>
+
+                <div id="menu_1" class="bb_box_wrap tabcontent">
+                    <div class="bb_box animated fadeInUp wow delay-02s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bb_img_1.jpg" alt="식빵"></a></div>
+                        <p class="bb_text">식빵 <span>₩2000</span></p>
+                    </div>
+                    <div class="bb_box animated fadeInUp wow delay-04s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bb_img_2.jpg" alt="크로와상"></a></div>
+                        <p class="bb_text">크로와상 <span>₩2500</span></p>
+                    </div>
+                    <div class="bb_box animated fadeInUp wow delay-06s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bb_img_3.jpg" alt="머핀"></a></div>
+                        <p class="bb_text">머핀 <span>₩1500</span></p>
+                    </div>
+                    <div class="bb_box animated fadeInUp wow delay-08s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bb_img_4.jpg" alt="프레첼"></a></div>
+                        <p class="bb_text">프레첼 <span>₩2000</span></p>
+                    </div>
+                </div>
+
+                <div id="menu_2" class="bb_box_wrap tabcontent">
+                    <div class="bb_box animated fadeInUp wow delay-02s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_1.jpg" alt="초코케이크"></a></div>
+                        <p class="bb_text">초코케이크 <span>₩6000</span></p>
+                    </div>
+                    <div class="bb_box animated fadeInUp wow delay-04s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_2.jpg" alt="딸기케이크"></a></div>
+                        <p class="bb_text">딸기케이크 <span>₩6000</span></p>
+                    </div>
+                    <div class="bb_box animated fadeInUp wow delay-06s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_3.jpg" alt="과일케이크"></a></div>
+                        <p class="bb_text">과일케이크 <span>₩7000</span></p>
+                    </div>
+                    <div class="bb_box animated fadeInUp wow delay-08s">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_4.jpg" alt="블루베리케이크"></a></div>
+                        <p class="bb_text">블루베리케이크 <span>₩6500</span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+        <!-- <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">Best Cake</h2>
+                <p class="sub_text">100% 우리밀로 만든 맛있는 빵! 건강한 빵! 잇츠제과</p>
+
+                <p class="more"><a href="#">MORE</a></p>
+
+                <div class="bb_box_wrap">
+                    <div class="bb_box">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_1.jpg" alt="초코케이크"></a></div>
+                        <p class="bb_text">초코케이크 <span>₩6000</span></p>
+                    </div>
+                    <div class="bb_box">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_2.jpg" alt="딸기케이크"></a></div>
+                        <p class="bb_text">딸기케이크 <span>₩6000</span></p>
+                    </div>
+                    <div class="bb_box">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_3.jpg" alt="과일케이크"></a></div>
+                        <p class="bb_text">과일케이크 <span>₩7000</span></p>
+                    </div>
+                    <div class="bb_box">
+                        <div class="bb_img_wrap"><a href="#"><img src="images/bc_img_4.jpg" alt="블루베리케이크"></a></div>
+                        <p class="bb_text">블루베리케이크 <span>₩6500</span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </section> -->
+
+
+
+        <section id="contents_wrap_3" class="clearfix">
+                <p class="banner_title animated fadeInLeft wow">Brand Story</p>
+                <p class="b_more animated fadeInRight wow"><a href="#">자세히보기</a></p>
+            
+        </section>
+
+        <section id="contents_wrap_3_480" class="clearfix">
+            <p class="banner_title">Brand Story</p>
+            <p class="b_more"><a href="#">자세히보기</a></p>
+            <img src="images/b_banner_img_480.jpg" alt="">
+        
+    </section>
+
+
+        <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">Store Info</h2>
+                <p class="sub_text">100% 우리밀로 만든 맛있는 빵! 건강한 빵! 잇츠제과</p>
+
+                <div class="slider2">
+                    <div class="store_wrap">
+                        <div class="store">
+                            <div class="store_box">
+                                <p class="store_text">인천부평점</p>
+                                <a href="#"><img src="images/si_img_1.jpg" alt="인천부평점"></a>
+                            </div>
+                        </div>
+                        <div class="store">
+                            <div class="store_box">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0150207672477!2d126.71880927645834!3d37.507563877506506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7db693133557%3A0x6a2742e3519c6e05!2z67aA7Y-J6rWs7LKt7Jet!5e0!3m2!1sko!2skr!4v1692596447779!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!--<p class="store_text">인천송도점</p>
+                                <a href="#"><img src="images/si_img_2.jpg" alt="인천송도점"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_wrap">
+                        <div class="store">
+                            <div class="store_box">
+                                <p class="store_text">인천청라점</p>
+                                <a href="#"><img src="images/si_img_2.jpg" alt="인천청라점"></a>
+                            </div>
+                        </div>
+                        <div class="store">
+                            <div class="store_box">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12654.99695792027!2d126.60004923259208!3d37.537408014719816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7f7824aa16c3%3A0x11cf8135032cffe1!2z7J247LKc6rSR7Jet7IucIOyyreudvOq1reygnOuPhOyLnA!5e0!3m2!1sko!2skr!4v1692597141622!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!--<p class="store_text">인천송도점</p>
+                                <a href="#"><img src="images/si_img_2.jpg" alt="인천송도점"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_wrap">
+                        <div class="store">
+                            <div class="store_box">
+                                <p class="store_text">인천송도점</p>
+                                <a href="#"><img src="images/si_img_3.jpg" alt="인천청라점"></a>
+                            </div>
+                        </div>
+                        <div class="store">
+                            <div class="store_box">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12654.99695792027!2d126.60004923259208!3d37.537408014719816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7f7824aa16c3%3A0x11cf8135032cffe1!2z7J247LKc6rSR7Jet7IucIOyyreudvOq1reygnOuPhOyLnA!5e0!3m2!1sko!2skr!4v1692597141622!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!--<p class="store_text">인천송도점</p>
+                                <a href="#"><img src="images/si_img_2.jpg" alt="인천송도점"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            
+                <!-- <a id="prev" class="prev" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                <a id="next" class="next" href="#"><i class="fa-solid fa-chevron-right"></i></a> -->
+            </div>
+        </section>
+
+
+
+
+        <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">Event Promotion</h2>
+                <p class="sub_text">100% 우리밀로 만든 맛있는 빵! 건강한 빵! 잇츠제과</p>
+
+                        <div class="event_wrap">
+
+                        <div class="event container animated fadeInDown delay-02s wow"><div class="event_box">
+                            <div class="overlay_1">
+                                <p class="text">크리스마스 이벤트</p>
+                            </div>
+                        <a href="#"><img src="images/e_img_1.jpg" alt="크리스마스 이벤트" class="image"></a></div></div>
+
+                        <div class="event container animated fadeInUp delay-04s wow"><div class="event_box">
+                            <div class="overlay_2">
+                                <p class="text">카카오페이 할인</p>
+                            </div>
+                        <a href="#"><img src="images/e_img_2.jpg" alt="카카오페이 할인" class="image"></a></div></div>
+                        
+                        <div class="event container animated fadeInDown delay-06s wow"><div class="event_box">
+                            <div class="overlay_3">
+                                <p class="text">우리카드 포인트</p>
+                            </div>
+                        <a href="#"><img src="images/e_img_3.jpg" alt="우리카드 포인트" class="image"></a></div></div>
+
+                        <div class="event container animated fadeInUp delay-08s wow view_x"><div class="event_box">
+                            <div class="overlay_3">
+                                <p class="text">우리카드 포인트</p>
+                            </div>
+                        <a href="#"><img src="images/e_img_3.jpg" alt="우리카드 포인트" class="image"></a></div></div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <footer>
+            <div id="footer">
+                <div class="f_logo"><img src="images/f_logo.png" alt="잇츠제과"></div>
+                <div class="copy">
+                    인천광역시 부평구 부평동 123-45  Tel. 02-2345-9876<br>
+                    ⓒ2023 잇츠제과 all rights reserved.
+                </div>
+                <div class="sns">
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+
+
+
+
+
+    <!-- 메뉴탭 -->
+<script>
+    function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $('.slider').bxSlider({
+                    auto: true, // 자동으로 애니메이션 시작
+                    speed: 900, // 애니메이션 속도
+                    pause: 4000, // 애니메이션 유지 시간 (1000은 1초)
+                    autoHover: false, // 마우스 올렸을 때 전환 멈춤
+                    mode: 'horizontal', // 슬라이드 모드 ('fade', 'horizontal', 'vertical')
+                    pager: false, // 페이지 표시 보여짐
+                    controls: true, // 사이드 컨트롤러
+                });
+                $('.slider2').bxSlider({
+                    auto: true, // 자동으로 애니메이션 시작
+                    speed: 900, // 애니메이션 속도
+                    pause: 4000, // 애니메이션 유지 시간 (1000은 1초)
+                    autoHover: true, // 마우스 올렸을 때 전환 멈춤
+                    mode: 'vertical', // 슬라이드 모드 ('fade', 'horizontal', 'vertical')
+                    pager: true, // 페이지 표시 보여짐
+                    controls: false, // 사이드 컨트롤러
+                });
+            });
+
+    </script>
+
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" language="javascript">   
+    $(function() {
+        $('#store').carouFredSel({
+            responsive: true,
+            width: '100%',
+            scroll: 1, //하나씩 스크롤
+            prev: '#prev',
+            next: '#next',
+            auto: true,
+            items: {
+                visible: {
+                    min: 2,
+                    max: 5
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.img_text');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+    anime.timeline({loop: true})
+      .add({
+        targets: '.img_text .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 2250,
+        delay: (el, i) => 150 * (i+1)
+      }).add({
+        targets: '.img_text',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>와플먹고</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+    
+    <!-- 팝업레이어 시작 -->
+
+    <script language="javascript">
+        function setCookie( name, value, expiredays )
+        {
+        var todayDate = new Date();
+        todayDate.setDate( todayDate.getDate() + expiredays );
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+    
+        function closeWin() { 
+        if ( document.getElementById("pop_chk").checked  ){
+        setCookie( "maindiv", "done" , 1 );
+        }
+        document.all['divpop'].style.visibility = "hidden";
+        }
+    
+        function closeWin2() {
+        if ( document.getElementById("pop_chk2").checked  ){
+        setCookie( "maindiv", "done" , 2 );
+        }
+        document.all['divpop2'].style.visibility = "hidden";
+        }
+    </script>
+    
+    
+    <!-- 1번 팝업 스크립트 -->
+    <script language="Javascript"> 
+    cookiedata = document.cookie;
+    
+    if ( cookiedata.indexOf("maindiv=done") < 0 ) {
+    document.all['divpop'].style.visibility = "visible";
+    } else {
+    document.all['divpop'].style.visibility = "hidden";
+    }
+    </script>
+    
+    
+    
+    <!--2번 팝업 스크립트 -->
+    <script language="Javascript">
+    cookiedata = document.cookie;
+    
+    if ( cookiedata.indexOf("maindiv=done") < 0 ) {
+    document.all['divpop2'].style.visibility = "visible";
+    } else {
+       document.all['divpop2'].style.visibility = "hidden";
+      }
+     </script>
+     
+     
+     
+     <!-- 1번 팝업  -->
+     
+     <div id="divpop" style="position:absolute; left:50px; top:50px; z-index:999999;">
+        <div><a href="#"><img src="images/popup.jpg" border="0"></a></div>
+        <p style="width:100%; text-align: right; padding:5px 20px 10px 0px; background:#000; font-size:14px; color:#ccc; box-sizing: border-box; ">
+           <input type="checkbox"  name="chkbok" id="pop_chk" value="1" /> &nbsp;오늘 하루 열지 않기 &nbsp; <a href="javascript:closeWin();" /><i class="fa-solid fa-x" style="font-size: 18px; color: #ccc;"></i></a>
+        <p>
+     </div>
+     
+     
+     
+     <!-- 2번 팝업  -->
+     
+     <!-- <div id="divpop2" style="position:absolute; left:570px; top:50px; z-index:9999998;">
+        <div><a href="#"><img src="images/popup/p_20191015-1.jpg" border="0"></a></div>
+        <p style="width:100%; text-align: right; padding:5px 20px 10px 0px; background:#000; font-size:14px; color:#ccc; box-sizing: border-box; ">
+           <input type="checkbox"  name="chkbok2" id="pop_chk2" value="2" /> &nbsp;오늘 하루 열지 않기 &nbsp; <a href="javascript:closeWin2();" /><i class="fa-solid fa-x" style="font-size: 18px; color: #ccc;"></i></a>
+        <p>
+     </div> -->
+     
+     
+     
+      <!-- 팝업 레이어 끝 -->
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="clearfix">
+            <div id="header">
+                <h1 class="animated fadeInDown wow"><a href="index.html"><img src="images/logo.png" alt="와플먹고"></a></h1>
+                <nav>
+
+                    <div class="nav_bg"></div>
+
+                    <p class="toggle"><a href="#"><i class="fa-solid fa-bars" onclick="openNav()"></i></a></p>
+
+                    <div id="mySidenav" class="nav_480">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul class="menu">
+                            <li><a href="#">가게소개</a></li>
+                            <li><a href="#">메뉴안내</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                        <div class="sns_480">
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
+                    </div>
+                    
+                    <ul class="gnb">
+                        <li><a href="#">가게소개</a>
+                            <ul class="sub">
+                                <li><a href="#">인삿말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">브랜드스토리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메뉴안내</a>
+                            <ul class="sub">
+                                <li><a href="#">와플류</a></li>
+                                <li><a href="#">커피류</a></li>
+                                <li><a href="#">음료류</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">매장안내</a>
+                            <ul class="sub">
+                                <li><a href="#">전국 매장 현황</a></li>
+                                <li><a href="#">신규매장</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">창업안내</a>
+                            <ul class="sub">
+                                <li><a href="#">창업상담</a></li>
+                                <li><a href="#">창업비용 및 절차</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="banner" class="animated fadeInUp wow">
+            <p class="img_text">
+                달콤하고 고소한 와플 & 하루<br>
+            </p>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <div class="slider">
+                <div class="animated fadeInDown wow">
+                    <img src="images/main_1.jpg" alt="">
+                </div>
+                <div class="animated fadeInUp wow">
+                    <img src="images/main_2.jpg" alt="">
+                </div>
+                <div class="animated fadeInDown wow">
+                    <img src="images/main_3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="banner_480">
+            <p class="img_text_480">
+                와플<br>
+                먹고
+            </p>
+            <img src="images/m_main.jpg" alt="이미지">
+        </section>
+
+
+
+        <section id="contents_wrap_1" class="clearfix">
+            <div id="contents">
+                <div class="icon animated bounceInUp delay-02s wow">
+                    <a href="#"><img src="images/icon_1.png" alt="와플류"></a>
+                    <p class="icon_text">와플류</p>
+                </div>
+                <div class="icon animated bounceInUp delay-04s wow">
+                    <a href="#"><img src="images/icon_2.png" alt="커피류"></a>
+                    <p class="icon_text">커피류</p>
+                </div>
+                <div class="icon animated bounceInUp delay-06s wow">
+                    <a href="#"><img src="images/icon_3.png" alt="음료류"></a>
+                    <p class="icon_text">음료류</p>
+                </div>
+                <div class="icon animated bounceInUp delay-08s wow">
+                    <a href="#"><img src="images/icon_4.png" alt="매장찾기"></a>
+                    <p class="icon_text">매장찾기</p>
+                </div>
+                <div class="icon animated bounceInUp delay-10s wow">
+                    <a href="#"><img src="images/icon_5.png" alt="창업문의"></a>
+                    <p class="icon_text">창업문의</p>
+                </div>
+                <div class="icon animated bounceInUp delay-12s wow">
+                    <a href="#"><img src="images/icon_6.png" alt="오시는길"></a>
+                    <p class="icon_text">오시는길</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">메뉴안내</h2>
+                <p class="sub_text">달콤하고 고소한 와플, 달콤하고 고소한 하루</p>
+
+                <!-- <p class="more"><a href="#">더보기</a></p> -->
+
+
+                <div class="tab animated fadeInDown delay-01s wow">
+                    <button id="defaultOpen" class="tablinks" onclick="openMenu(event, 'menu_1')">와플류</button>
+                    <button class="tablinks" onclick="openMenu(event, 'menu_2')">커피류</button>
+                    <button class="tablinks" onclick="openMenu(event, 'menu_3')">음료류</button>
+                </div>
+
+                <div id="menu_1" class="waffle_wrap tabcontent">
+                    <div class="waffle animated fadeInUp delay-02s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/w_img_1.jpg" alt="초코와플"></a></div>
+                        <p class="waffle_text">초코와플</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-04s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/w_img_2.jpg" alt="딸기와플"></a></div>
+                        <p class="waffle_text">딸기와플</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-06s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/w_img_3.jpg" alt="생크림와플"></a></div>
+                        <p class="waffle_text">생크림와플</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-08s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/w_img_4.jpg" alt="캬라멜와플"></a></div>
+                        <p class="waffle_text">캬라멜와플</p>
+                    </div>
+                </div>
+
+                <div id="menu_2" class="waffle_wrap tabcontent">
+                    <div class="waffle animated fadeInUp delay-02s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/c_img_1.jpg" alt="아메리카노"></a></div>
+                        <p class="waffle_text">아메리카노</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-04s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/c_img_2.jpg" alt="에스프레소"></a></div>
+                        <p class="waffle_text">에스프레소</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-06s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/c_img_3.jpg" alt="카페라떼"></a></div>
+                        <p class="waffle_text">카페라떼</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-08s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/c_img_4.jpg" alt="카페모카"></a></div>
+                        <p class="waffle_text">카페모카</p>
+                    </div>
+                </div>
+
+                <div id="menu_3" class="waffle_wrap tabcontent">
+                    <div class="waffle animated fadeInUp delay-02s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/b_img_1.jpg" alt="오렌지주스"></a></div>
+                        <p class="waffle_text">메론소다</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-04s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/b_img_2.jpg" alt="수박주스"></a></div>
+                        <p class="waffle_text">콜라</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-06s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/b_img_3.jpg" alt="콜라"></a></div>
+                        <p class="waffle_text">환타</p>
+                    </div>
+                    <div class="waffle animated fadeInUp delay-08s wow">
+                        <div class="waffle_img_wrap"><a href="#"><img src="images/b_img_4.jpg" alt="사이다"></a></div>
+                        <p class="waffle_text">딸기소다</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">커피류</h2>
+                <p class="sub_text">달콤하고 고소한 와플, 달콤하고 고소한 하루</p>
+
+                <p class="more"><a href="#">더보기</a></p>
+                <div class="waffle_wrap">
+                    <div class="waffle">
+                        <a href="#"><img src="images/c_img_1.jpg" alt="아메리카노"></a>
+                        <p class="waffle_text">아메리카노</p>
+                    </div>
+                    <div class="waffle">
+                        <a href="#"><img src="images/c_img_2.jpg" alt="에스프레소"></a>
+                        <p class="waffle_text">에스프레소</p>
+                    </div>
+                    <div class="waffle">
+                        <a href="#"><img src="images/c_img_3.jpg" alt="카페라떼"></a>
+                        <p class="waffle_text">카페라떼</p>
+                    </div>
+                    <div class="waffle">
+                        <a href="#"><img src="images/c_img_4.jpg" alt="카페모카"></a>
+                        <p class="waffle_text">카페모카</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">음료류</h2>
+                <p class="sub_text">달콤하고 고소한 와플, 달콤하고 고소한 하루</p>
+
+                <p class="more"><a href="#">더보기</a></p>
+                <div class="waffle_wrap">
+                    <div class="waffle">
+                        <a href="#"><img src="images/b_img_1.jpg" alt="오렌지주스"></a>
+                        <p class="waffle_text">오렌지주스</p>
+                    </div>
+                    <div class="waffle">
+                        <a href="#"><img src="images/b_img_2.jpg" alt="수박주스"></a>
+                        <p class="waffle_text">수박주스</p>
+                    </div>
+                    <div class="waffle">
+                        <a href="#"><img src="images/b_img_3.jpg" alt="콜라"></a>
+                        <p class="waffle_text">콜라</p>
+                    </div>
+                    <div class="waffle">
+                        <a href="#"><img src="images/b_img_4.jpg" alt="사이다"></a>
+                        <p class="waffle_text">사이다</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contents_wrap_3" class="clearfix animated fadeInUp wow">
+            <p class="bottom_title animated slideInLeft delay-02s wow">브랜드스토리</p>
+            <p class="bottom_text animated slideInRight delay-06s wow">
+                건강한 식재료로 건강한 맛을 담은 와플먹고는 검증된 맛을 통해 지난 10년간<br> 
+                전국 300여개의 가맹점이 함께 하며 장수 프랜차이즈 브랜드로 거듭났습니다.
+                </p>
+        </section>
+
+        <section id="contents_wrap_2" class="clearfix">
+            
+            <h2 class="sub_title">매장안내</h2>
+            <p class="sub_text">달콤하고 고소한 와플, 달콤하고 고소한 하루</p>
+            <div class="responsive">
+                <div class="store_wrap" id="store">
+                    <div class="store animated fadeInUp wow delay-02s">
+                        <div class="store_box">
+                            <p class="store_text">인천부평점</p>
+                            <a href="#"><img src="images/s_img_1.jpg " alt="인천부평점"></a>
+                        </div>
+                    </div>
+                    <div class="store animated fadeInUp wow delay-04s">
+                        <div class="store_box">
+                            <p class="store_text">인천송도점</p>
+                            <a href="#"><img src="images/s_img_2.jpg " alt="인천부평점"></a>
+                        </div>
+                    </div>
+                    <div class="store animated fadeInUp wow delay-06s">
+                        <div class="store_box ">
+                            <p class="store_text">서울영등포점</p>
+                            <a href="#"><img src="images/s_img_3.jpg " alt="인천부평점"></a>
+                        </div>
+                    </div>
+                    <div class="store animated fadeInUp wow delay-08s">
+                        <div class="store_box">
+                            <p class="store_text">충북단양점</p>
+                            <a href="#"><img src="images/s_img_4.jpg " alt="인천부평점"></a>
+                        </div>
+                    </div>
+                    <div class="store animated fadeInUp wow delay-10s">
+                        <div class="store_box view_x">
+                            <p class="store_text">광주금호점</p>
+                            <a href="#"><img src="images/s_img_5.jpg " alt="인천부평점"></a>
+                        </div>
+                    </div>
+                    <div class="store animated fadeInUp wow delay-12s">
+                        <div class="store_box view_x">
+                            <p class="store_text">부천도당점</p>
+                            <a href="#"><img src="images/s_img_3.jpg " alt="인천부평점"></a>
+                        </div>
+                    </div>
+                </div>
+                <a id="prev" class="prev" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                <a id="next" class="next" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            
+        </section>
+
+
+
+
+        <section id="contents_wrap_2" class="clearfix">
+            <div id="contents">
+                <h2 class="sub_title">이벤트</h2>
+                <p class="sub_text">달콤하고 고소한 와플, 달콤하고 고소한 하루</p>
+
+                <div class="event_wrap">
+                    <div class="event animated fadeInUp delay-02s wow"><a href="#"><img src="images/e_img_1.jpg" alt="창업안내"></a></div>
+                    <div class="event animated fadeInUp delay-04s wow"><a href="#"><img src="images/e_img_2.jpg" alt="성공스토리"></a></div>
+                    <div class="event animated fadeInUp delay-06s wow view_x"><a href="#"><img src="images/e_img_3.jpg" alt="카카오페이"></a></div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <footer class="animated fadeInDown delay-02s wow">
+            <div id="footer">
+                <div class="f_logo"><img src="images/f_logo.png" alt="와플먹고"></div>
+                <div class="copy">
+                    서울시 영등포구 당산동 123-45  Tel. 02-2345-9876<br>
+                    ⓒ2023 와플먹고 all rights reserved.
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+    
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $('.slider').bxSlider({
+                    auto: true, // 자동으로 애니메이션 시작
+                    speed: 900, // 애니메이션 속도
+                    pause: 4000, // 애니메이션 유지 시간 (1000은 1초)
+                    autoHover: false, // 마우스 올렸을 때 전환 멈춤
+                    mode: 'fade', // 슬라이드 모드 ('fade', 'horizontal', 'vertical')
+                    pager: false, // 페이지 표시 보여짐
+                    controls: true, // 사이드 컨트롤러
+                });
+            });
+    </script>
+
+
+<!-- 메뉴탭 -->
+<script>
+    function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" language="javascript">   
+    $(function() {
+        $('#store').carouFredSel({
+            responsive: true,
+            width: '100%',
+            scroll: 1, //하나씩 스크롤
+            prev: '#prev',
+            next: '#next',
+            auto: true,
+            items: {
+                visible: {
+                    min: 2,
+                    max: 5
+                }
+            }
+        });
+    });
+</script>
+
+
+
+<script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.img_text');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.img_text .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.img_text',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+
+</body>
+</html>
